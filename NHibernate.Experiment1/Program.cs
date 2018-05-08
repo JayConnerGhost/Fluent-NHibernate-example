@@ -18,10 +18,12 @@ namespace NHibernate.Experiment1
                 //restart here ->https://www.tutorialspoint.com/nhibernate/nhibernate_fluent_hibernate.htm
                 using (var session = NHibernateHelper.OpenSession())
                 {
-                  
+                    var frenchExam = new Exam() {ExamName = "french", Students= new List<Student>()};
+                    
                         var school = new School()
                         {
                             Name="Teds High"
+                           
                         };
                         session.Save(school);
 
@@ -29,9 +31,13 @@ namespace NHibernate.Experiment1
                         {
                             FirstName = "Allan",
                             LastName = "Bomer",
-                            School = school
+                            School = school,
                         };
-                        session.Save(student);
+                    student.Exams = new List<Exam> {frenchExam};
+                    frenchExam.Students.Add(student);
+                    session.Save(frenchExam);
+                    session.Save(student);
+                session.Flush();
                       
                        
                     
