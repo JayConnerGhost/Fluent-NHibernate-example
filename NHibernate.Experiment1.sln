@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernate.Experiment1", "NHibernate.Experiment1\NHibernate.Experiment1.csproj", "{8583EA29-B8B6-4F76-A39D-B4393B06692B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8583EA29-B8B6-4F76-A39D-B4393B06692B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8583EA29-B8B6-4F76-A39D-B4393B06692B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8583EA29-B8B6-4F76-A39D-B4393B06692B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8583EA29-B8B6-4F76-A39D-B4393B06692B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F4BF2B3-EAA3-4ACB-99C4-3DE4A6E72867}
+	EndGlobalSection
+EndGlobal
