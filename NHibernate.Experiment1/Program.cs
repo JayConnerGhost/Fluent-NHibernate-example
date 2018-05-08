@@ -31,7 +31,19 @@ namespace NHibernate.Experiment1
 
                 }
 
-                Console.ReadLine();
+            using (var session = NHibernateHelper.OpenSession())
+            {
+                using (var transaction = session.BeginTransaction())
+                {
+                    var students = session.Query<Student>()
+                        .Where(x => x.FirstName == "Allan").ToList();
+
+
+                    transaction.Commit();
+                }
+
+            }
+            Console.ReadLine();
 
         }
     }
